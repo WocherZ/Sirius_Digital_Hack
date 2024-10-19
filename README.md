@@ -87,7 +87,7 @@ cd Sirius_Digital_Hack
 Перейдите в директорию с приложением:
 
 ```commandline
-cd service/app
+cd service
 ```
 
 ### **Шаг 2: Создание виртуального окружения**
