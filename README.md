@@ -62,7 +62,14 @@
 
 Все модели обучались на трёхклассовую классификацию - Нейтральный/Положительный/Отрицательный ответ дал сотрудник.
 
-В качестве метода дообучения был выбран метод LoRA - [LOW-RANK ADAPTATION](https://arxiv.org/pdf/2106.09685).
+В качестве метода дообучения был выбран метод LoRA - [LOW-RANK ADAPTATION](https://arxiv.org/pdf/2106.09685). Данный метод обладает преимуществами - не требует множества ресурсов(по сравнению с полным дообучением модели), а также не требует большого количества данных.
+
+Итогом стали 3 адаптера для изначальной модели, которые легковесные и просты в использовании при инференсе - засчёт быстрого переключения (как на cpu, так и на gpu).
+
+Модели были выложены на hugging face:
+1. [sirius_hack_staying_possibility](https://huggingface.co/Vzvorygin/sirius_hack_staying_possibility)
+2. [sirius_hack_returning_possibility](https://huggingface.co/Vzvorygin/sirius_hack_returning_possibility)
+3. [sirius_hack_recommendation_possibility](https://huggingface.co/Vzvorygin/sirius_hack_recommendation_possibility)
 
 # Демо решения
 
